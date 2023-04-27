@@ -2,6 +2,19 @@
     width: 3%;
 }
 
-.budhi-tes {
+#img-1{
+    top: -1%;
+    opacity: 10%;
+    position: absolute;
+    width: 100vw;
+}
+
+.page-1{
+    position: relative;
+    height: 100;
+}
+
+.intro-title{
+    width:100%;
     text-align: center;
 }
