@@ -29,11 +29,12 @@ html,body {
     position: absolute;
     width: 100vw;
 }
-/* 
+
+
 .page-1 {
     position: relative;
     height: 100;
-} */
+}
 
 .intro-title {
     width:100%;
@@ -60,40 +61,102 @@ html,body {
     position: relative;
 }
 
-
 .kartu {
     display: flex;
     justify-content: space-evenly;
-    margin-inline: 5% ;
+    margin-inline: 5%;
     padding-block: 5%;
     text-align: justify;
     border-radius: 30px;
 }
 
+.kartu h2 {
+    font-weight: bold;
+}
+
 .head-stand {
     display: flex;
     justify-content: space-between;
-    margin-top: 25rem;
+    margin-top: 28em;
+    margin-left: 2.3em;
+}
+
+.anj-1 {
+    left: 50%;
+    transition: 0.3s;
+    transition-property: background;
+    
+}
+
+.anj-1 a:hover{
+    background: #ffff;
+}
+
+.anj-2 {
+    right: 3.1em;
 }
 
 #card-img {
     width: 100%;
 }
 
-.card-button{
-    position: absolute;
-    bottom: -2em;
-    left:35vw;
-
-    border-radius: 30px;
-    border:solid 1px;
-    padding: .75em 2em .5em 2em;
+.card-button {
+    border-radius: 10px; 
+    text-align:center;
+    padding: .85em 2em .5em 2em;
     background-color:red;
-    color:white;
+    color:white;                
+}  
+
+.link-button {
+    text-decoration: none;
+}
+
+#card-desc h2 {
+    margin-bottom: 5%;
+}
+.card-button h4 {
+    font-weight: bolder;
 }
 
 .centering h1 {
-    /* font-size: 2em; */
+    font-weight: bolder;
     margin-top: 20vw;
+    font-size: 3.5em;
 }
 
+.centering h6 {
+    letter-spacing: .2rem;
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.page-1 .menuAtas a {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.page-1 h2 {
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+.col-4 h6 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.page-2 h1 {
+    margin-top: 5%;
+    font-family: 'Monoton', cursive;
+    color: #ee0000;
+    letter-spacing: .3vw;
+    margin-left: 1.65em;
+}
+
+.dashboard-card{
+    background-color: white;
+    border-radius: 15px;
+}

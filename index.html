@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slideshow.css">
     
+    <!-- fontawessome -->
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    
 </head>
 <body>
 
@@ -22,12 +25,14 @@
     <section class="page-1">
         <nav>
             <div class="mt-2 Navigation d-flex justify-content-between align-items-center">
-                <span class="fw-bold">KPN</span>
+                <span class="fw-bold"><h2>KPN</h2></span>
                 <div class="d-inline m-auto">
+                    <span class="menuAtas">
                     <a class="text-decoration-none text-black mx-1" href="#">Dashboard</a>
                     <a class="text-decoration-none text-black mx-1" href="#">Stand</a>
                     <a class="text-decoration-none text-black mx-1" href="#">Koperasi</a>
                     <a class="text-decoration-none text-black mx-1" href="#">Kontak</a>
+                    </span>
                 </div>
                 <img src="images/KPN PNB-Donatur 1.png" alt="" id="logo-kpn">
             </div>  
@@ -44,61 +49,118 @@
 
     <!-- bagian card stand -->
     <section >
-        <div class="container relative">
-            <div class="head-stand">
-                <h1>STAND</h1>
-                <div class="nav-head-stand">
-                    <div>
-                        <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                        <h4>PREV</h4>
+        <div class=" relative">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="head-stand px-3 row">
+                        <h1 class="col-8 mt-3">STAND</h1>
+                        <div class="nav-head-stand relative col-4">
+                            <div class="">
+                                <button class="text-dark fw-bolder carousel-control-prev anj-1" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">PREVIOUS</button>
+                            </div>
+                            <div class="">
+                                <button id="link" class="text-dark fw-bolder carousel-control-next anj-2" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">NEXT</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                        <h4>NEXT</h4>
+                    <div class="carousel-item active">
+                        <div class="kartu row bg-white ">
+                            <div id="card-desc" class="col-4">
+                                <h2>Warung Bu Komang</h2>
+        
+                                <p>Didirikan tanggal 28 februari 1998 warung ini sangat sering dikunjungi karena menu nasi 
+                                    babi guling yang sangat nikmat.</p>
+        
+                                <h6>Start from <span class="red">10K</span></h6>
+                                <div class="mt-5 row">
+                                    <a href="#" class="col-8 link-button">
+                                        <div class="card-button">
+                                            <h5>Lihat Menu</h5>
+                                        </div>  
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="images/NasiBabi.png" alt="" id="card-img">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="kartu row bg-white ">
+                            <div id="card-desc" class="col-4">
 
-            <!-- Swipe-able card -->
-            <div class="swipe">
-                <div class="kartu row bg-white ">
-                    <div id="card-desc" class="col-4">
-                        <h2>Warung Bu Komang</h2>
-
-                        <p>Didirikan tanggal 28 februari 1998 warung ini sangat sering dikunjungi karena menu nasi 
-                            babi guling yang mampu mengenyangkan perut para mahasiswa.</p>
-
-                        <h6>Start from <span class="red">10K</span></h6>
+                                <h2>Warung Anugrah </h2>
+        
+                                <p>Didirikan tanggal 15 Maret 2000 warung ini menjadi langganan mahasiswa karena 
+                                    memiliki menu makanan yang lezat.</p>
+        
+                                <h6>Start from <span class="red">10K</span></h6>
+                                
+                                <div class="mt-5 row">
+                                    <a href="#" class="col-8 link-button">
+                                        <div class="card-button">
+                                            <h5>Lihat Menu</h5>
+                                        </div>  
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <img src="images/NasiBabi.png" alt="" id="card-img">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-4">
-                        <img src="images/image 6.png" alt="daging anjing" id="card-img">
+                    <div class="carousel-item">
+                        <div class="kartu row bg-white ">
+                            <div id="card-desc" class="col-4">
+                                <h2>Warung Selera Rasa</h2>
+        
+                                <p>Didirikan tanggal  6 April 2004 warung ini warung ini memiliki menu yang sangat bervariasi 
+                                    dan juga sangat nikmat.</p>
+        
+                                <h6>Start from <span class="red">10K</span></h6>
+                                <div class="mt-5 row">
+                                    <a href="#" class="col-8 link-button">
+                                        <div class="card-button">
+                                            <h5>Lihat Menu</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="images/NasiBabi.png" alt="" id="card-img">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <a href="#">
-                    <div class="card-button">
-                        <h4>Lihat Menu</h4>
-                    </div>
-                </a>
+                </div>                
             </div>
         </div>
     </section>
     
-    <!-- <section class="page-2">
+    <section class="page-2">
         <h1>DASHBOARD</h1>
-        <div class="jumlah-stand container">
-            <h2>Jumlah Stand</h2>
+        <div class="row">
+
+            <div class="col-2">
+                <div class="jumlah-stand container dashboard-card">
+                    <h2>Jumlah Stand</h2>
+                </div>
+                <div class="makanan container dashboard-card">
+                    <h2>Makanan</h2> 
+                </div> 
+                <div class="minuman container dashboard-card">
+                    <h2>Minuman</h2> 
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="stand-fav container dashboard-card">
+                    <h2>Stand Favorit</h2>
+                </div>
+            </div>
+
         </div>
-        <div class="makanan container">
-            <h2>Makanan</h2> 
-        </div> 
-        <div class="minuman container">
-            <h2>Minuman</h2> 
-        </div>
-        <div class="stand-fav container">
-            <h2>Stand Favorit</h2>
-        </div>
-    </section> -->
+    </section>
 </div>  
    
 <!-- bootstrap js -->
