@@ -49,11 +49,11 @@
 
     <!-- bagian card stand -->
     <section >
-        <div class=" relative">
+        <div class="relative">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="head-stand px-3 row">
-                        <h1 class="col-8 mt-3">STAND</h1>
+                        <h1 class="col-8 mt-3 monoton">STAND</h1>
                         <div class="nav-head-stand relative col-4">
                             <div class="">
                                 <button class="text-dark fw-bolder carousel-control-prev anj-1" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">PREVIOUS</button>
@@ -137,28 +137,49 @@
         </div>
     </section>
     
+    <!-- Dashboard -->
     <section class="page-2">
-        <h1>DASHBOARD</h1>
+        <h1 class="monoton">DASHBOARD</h1>
         <div class="row">
-
-            <div class="col-2">
-                <div class="jumlah-stand container dashboard-card">
-                    <h2>Jumlah Stand</h2>
+            <div class="col-3">
+                <div class="jumlah-stand container dashboard-card-kiri">
+                    <span class="JumlahStand"><h2>Jumlah Stand</h2></span> 
+                    <h1 id="large-text">3</h1>
                 </div>
-                <div class="makanan container dashboard-card">
+                <div class="makanan container dashboard-card-kiri">
                     <h2>Makanan</h2> 
+                    <h1>9</h1>
                 </div> 
-                <div class="minuman container dashboard-card">
+                <div class="minuman container dashboard-card-kiri">
                     <h2>Minuman</h2> 
+                    <h1>18</h1>
                 </div>
             </div>
 
-            <div class="col-10">
-                <div class="stand-fav container dashboard-card">
+            <div class="col-9">
+                <div class="stand-fav container dashboard-card vh-100 row">
                     <h2>Stand Favorit</h2>
+
+                    <div class="warung">
+                        <p>Warung Bu Komang</p>
+                        <p>Warung Anugrah</p>
+                        <p>Warung Selera Rasa</p>
+                    </div>
+
+                    <div class="persentase">
+                        <p>64,3%</p>
+                        <p>9,5%</p>
+                        <p>26,2%</p>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <progress value="64.3" max="100"></progress>
+                        <progress value="26.2" max="100"></progress>
+                        <progress value="9.5" max="100"></progress>
+                    </div>
+                    
                 </div>
             </div>
-
         </div>
     </section>
 </div>  

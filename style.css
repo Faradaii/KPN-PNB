@@ -12,6 +12,10 @@ html,body {
     overflow-x: hidden;
 }
 
+.monoton {
+    font-family: 'Monoton', cursive;
+}
+
 .head-stand h1 {
     font-family: 'Monoton', cursive;
     color: #ee0000;
@@ -83,13 +87,6 @@ html,body {
 
 .anj-1 {
     left: 50%;
-    transition: 0.3s;
-    transition-property: background;
-    
-}
-
-.anj-1 a:hover{
-    background: #ffff;
 }
 
 .anj-2 {
@@ -148,15 +145,55 @@ html,body {
     font-size: 1.1em;
 }
 
-.page-2 h1 {
+.JumlahStand, .makanan, .minuman {
+    text-align: center;
+}
+
+.page-2 h2 {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.page-2  h1 {
     margin-top: 5%;
-    font-family: 'Monoton', cursive;
     color: #ee0000;
     letter-spacing: .3vw;
     margin-left: 1.65em;
 }
 
-.dashboard-card{
+.dashboard-card {
     background-color: white;
     border-radius: 15px;
 }
+
+.dashboard-card-kiri {
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-weight: 00;
+    text-align: center;
+    display: flex;
+}
+
+#large-text {
+    font-size:50px;   
+    font-weight: 80px;
+}
+
+
+progress {
+    width: 70%;
+    height: 1em;
+    background-color: #fff;
+    appearance: transparent;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #ee0000;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: #ffff; 
+  }
+
+  
