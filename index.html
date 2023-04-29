@@ -28,8 +28,8 @@
                 <span class="fw-bold"><h2>KPN</h2></span>
                 <div class="d-inline m-auto">
                     <span class="menuAtas">
-                    <a class="text-decoration-none text-black mx-1" href="#">Dashboard</a>
-                    <a class="text-decoration-none text-black mx-1" href="#">Stand</a>
+                    <a class="text-decoration-none text-black mx-1" href="#page-2">Dashboard</a>
+                    <a class="text-decoration-none text-black mx-1" href="#page-1">Stand</a>
                     <a class="text-decoration-none text-black mx-1" href="#">Koperasi</a>
                     <a class="text-decoration-none text-black mx-1" href="#">Kontak</a>
                     </span>
@@ -48,11 +48,11 @@
     </section>
 
     <!-- bagian card stand -->
-    <section >
+    <section class="page-1" id="page-1">
         <div class="relative">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="head-stand px-3 row">
+                    <div class="head-stand pe-5 ps-4 row">
                         <h1 class="col-8 mt-3 monoton">STAND</h1>
                         <div class="nav-head-stand relative col-4">
                             <div class="">
@@ -138,46 +138,52 @@
     </section>
     
     <!-- Dashboard -->
-    <section class="page-2">
+    <section class="page-2" id="page-2">
         <h1 class="monoton">DASHBOARD</h1>
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 d-flex flex-column justify-content-between">
                 <div class="jumlah-stand container dashboard-card-kiri">
                     <span class="JumlahStand"><h2>Jumlah Stand</h2></span> 
                     <h1 id="large-text">3</h1>
                 </div>
                 <div class="makanan container dashboard-card-kiri">
                     <h2>Makanan</h2> 
-                    <h1>9</h1>
+                    <h1 id="large-text">9</h1>
                 </div> 
                 <div class="minuman container dashboard-card-kiri">
                     <h2>Minuman</h2> 
-                    <h1>18</h1>
+                    <h1 id="large-text">18</h1>
                 </div>
             </div>
 
             <div class="col-9">
-                <div class="stand-fav container dashboard-card vh-100 row">
+                <div class="stand-fav container dashboard-card">
                     <h2>Stand Favorit</h2>
-
-                    <div class="warung">
-                        <p>Warung Bu Komang</p>
-                        <p>Warung Anugrah</p>
-                        <p>Warung Selera Rasa</p>
+ 
+                    <div class="row">
+                        <div class="d-flex align-items-baseline">
+                            <p class="w-50">Warung Bu Komang</p>
+                            <progress value="63.3" max="100"></progress>
+                            <p>63,3%</p>
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <p class="w-50">Warung Bu Anugrah</p>
+                            <progress value="26.2" max="100"></progress>
+                            <p>26,2%</p>
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <p class="w-50">Warung Selera Rasa</p>
+                            <progress value="10.5" max="100"></progress>
+                            <p>10,5%</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="total-jmlh-pengunjung dashboard-card">
+                    <h2>Total Jumlah Pengunjung Harian</h2>
+                    <div class="d-flex justify-content-center align-items-baseline mt-4">
+                        <h4 class="fw-bolder fs-1 mx-1 red">19.200</h4>
+                        <h6 class="mx-1"> Pengunjung </h6>
                     </div>
-
-                    <div class="persentase">
-                        <p>64,3%</p>
-                        <p>9,5%</p>
-                        <p>26,2%</p>
-                    </div>
-                    
-                    <div class="progress-bar">
-                        <progress value="64.3" max="100"></progress>
-                        <progress value="26.2" max="100"></progress>
-                        <progress value="9.5" max="100"></progress>
-                    </div>
-                    
                 </div>
             </div>
         </div>
